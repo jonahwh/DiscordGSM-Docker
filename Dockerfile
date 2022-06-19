@@ -5,4 +5,4 @@ RUN git clone https://github.com/jonahwh/DiscordGSM.git .
 RUN git checkout master
 RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
-CMD ["python3", "bot.py", "-d"]
+CMD ["python3", "-u" "bot.py", "-d"]
